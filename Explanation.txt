@@ -1,0 +1,39 @@
+First of all i have written a java file named "Copy.java".
+
+Implemented features:
+1. This program can take two input through command line as command line arguments.
+   (args[0] and args[1])
+
+2. First one is the source and second one is the destination(where source file will be copied or overwritten).
+
+3. After taking inputs this program checks whether source is a file or not and destination is a directory or a file.
+   Using isFile() and isDirectory() methods.
+
+4. If the source is a file then the program shows a message to the user "Source is a file." 
+   and if not it shows another message "Source is not a file."
+   
+5. On the other hand, If the destination is a directory then the program shows a message to the user 
+   "Destination is a directory." 
+   and if not it shows another message "Destination is not a directory."
+
+6. If the destination folder does not exists but valid, a folder with same name will be automatically created using 
+   mkdir() method and the corresponding source file will be copied there. 
+  
+7. On the other hand, if destination folder already exists, then the corresponding source file will be copied there 
+   in same name. But, if the source file already exists in destination folder then it will ask user to choose 
+   whether he/she wants to keep both file or overwrite? If they choose 1 and press enter, both file will be kept 
+   and name of the copied file will be sourcefilename_copy.extension
+   If they choose 2 and press enter, then the existing file will be overwritten.
+   
+8. If destination is a file but not exists then the destination file will be created using createNewFile() method.
+   and the corresponding source file will be copied there.
+
+9. This program also shows the byte size of the source file so that the user can know about the size of the file
+   they are going to copy.
+   
+10. Finally, this program also shows the copying progress in percentage for example, "x% copying done..."
+	where x = 10,20,30,...,100
+
+11. After successfully copying the file this program shows a message to the user 
+    "(Successfully copied)".
+    
